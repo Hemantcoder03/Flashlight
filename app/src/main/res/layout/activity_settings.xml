@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A3CA8"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="General"
+        android:textColor="@color/purple_200"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:padding="15dp"
+            android:text="Turn on at start"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+        <TextView
+            android:id="@+id/textbox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/checkbox1"
+            app:layout_constraintEnd_toEndOf="@+id/checkbox1"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:text="Disabled"
+            android:textColor="#D6C8C8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.452" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:padding="15dp"
+            android:text="Turn off at exit"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox1" />
+
+        <TextView
+            android:id="@+id/textbox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/checkbox2"
+            app:layout_constraintEnd_toEndOf="@+id/checkbox2"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:text="Disabled"
+            android:textColor="#D6C8C8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.452" />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:button="@null"
+        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+        android:padding="15dp"
+        android:text="Switch click sound"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox2" />
+
+    <TextView
+        android:id="@+id/textbox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disabled"
+        android:textColor="#D6C8C8"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox3"
+        app:layout_constraintEnd_toEndOf="@+id/checkbox3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.452"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:button="@null"
+        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+        android:padding="15dp"
+        android:text="Vibration setting"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox3" />
+
+    <TextView
+        android:id="@+id/textbox4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disabled"
+        android:textColor="#D6C8C8"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox4"
+        app:layout_constraintEnd_toEndOf="@+id/checkbox4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.452"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Invite to friends"
+        android:textColor="@color/purple_200"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox4" />
+
+    <TextView
+        android:id="@+id/textbox5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:text="Share to friends"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

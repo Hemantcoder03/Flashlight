@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/touch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:background="#FF3949AB"
+            android:contentDescription="@string/power_button"
+            android:hapticFeedbackEnabled="true"
+            app:srcCompat="@drawable/back_torch_off"
+            tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageButton
+            android:id="@+id/mobile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF3949AB"
+            android:contentDescription="@string/app_name"
+            android:hapticFeedbackEnabled="true"
+            app:srcCompat="@drawable/front_torch_off"
+            tools:ignore="ImageContrastCheck" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/power_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:contentDescription="@string/power_button"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/power_button"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
